@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.66369be8.css",
-    "main.js": "/portfolio/static/js/main.098e5213.js",
+    "main.js": "/portfolio/static/js/main.96541684.js",
     "static/js/453.b21437c2.chunk.js": "/portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/projectr4.png": "/portfolio/static/media/projectr4.6c4191e217461666f1f5.png",
     "static/media/projectr5.png": "/portfolio/static/media/projectr5.52ee0a7302f2d5246cf8.png",
@@ -13,7 +13,7 @@
     "static/media/projectr1.png": "/portfolio/static/media/projectr1.3b8fc121de7d351fda80.png",
     "static/media/banner-bg.png": "/portfolio/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/header-img.svg": "/portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
-    "static/media/Snake.gif": "/portfolio/static/media/Snake.70f5b95df7a3eb7e612a.gif",
+    "static/media/Snake.gif": "/portfolio/static/media/Snake.7a359cc95c3b2f66a8d4.gif",
     "static/media/CentraNo2-Bold.ttf": "/portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -21,11 +21,11 @@
     "static/media/contact-img.svg": "/portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "index.html": "/portfolio/index.html",
     "main.66369be8.css.map": "/portfolio/static/css/main.66369be8.css.map",
-    "main.098e5213.js.map": "/portfolio/static/js/main.098e5213.js.map",
+    "main.96541684.js.map": "/portfolio/static/js/main.96541684.js.map",
     "453.b21437c2.chunk.js.map": "/portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66369be8.css",
-    "static/js/main.098e5213.js"
+    "static/js/main.96541684.js"
   ]
 }
