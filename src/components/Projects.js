@@ -7,7 +7,7 @@ import projectr2 from "../assets/img/projectr2.png";
 import projectr3 from "../assets/img/projectr3.png";
 import projectr4 from "../assets/img/projectr4.png";
 import projectr5 from "../assets/img/projectr5.png";
-import doormDash from "../assets/img/DormDash.png";
+import dormDash from "../assets/img/DormDash.png";
 import easyNote from "../assets/img/EasyNote.gif";
 import snake from "../assets/img/Snake.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -29,7 +29,7 @@ export const Projects = () => {
         "A comprehensive real estate platform for university students using the MERN stack.",
 
       githubUrl: "https://github.com/AM-creator/DormDash.git",
-      imgUrl: doormDash,
+      imgUrl: dormDash,
     },
     {
       title: "EasyNote",
