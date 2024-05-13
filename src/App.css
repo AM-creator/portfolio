@@ -421,12 +421,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 90%;
   padding: 10px;
   overflow: auto !important;
-  z-index: 3;
+  z-index: 3; 
 }
 
 .proj-imgbx:hover .proj-txtx,
 .proj-imgbx:active .proj-txtx {
-  opacity: 1;
+  opacity: 1;   
 }
 
 .proj-txtx h5 {
@@ -434,7 +434,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: bold;
   letter-spacing: 0.8px;
   line-height: 1.1em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .proj-txtx span {
@@ -443,6 +443,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.4px;
+}
+
+.link-icon{
+  margin-top:20px;
 }
 
 /* Adjustments for smaller screens */

@@ -23,12 +23,12 @@ export const ProjectCard = ({
         <div className="proj-txtx">
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub className="link-icon" />
             </a>
-          )} { "  "}
+          )} {" "} {" "}
            {webUrl && (
             <a href={webUrl} target="_blank" rel="noopener noreferrer">
-              <CgWebsite />
+              <CgWebsite className="link-icon" />
             </a>
           )}
           <h5>{title}</h5>

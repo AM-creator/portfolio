@@ -26,10 +26,11 @@ export const Projects = () => {
     {
       title: "DormDash",
       description:
-        "A comprehensive real estate platform for university students using the MERN stack.",
+        "A comprehensive real estate platform for university communities using MERN stack.",
 
       githubUrl: "https://github.com/AM-creator/DormDash.git",
       imgUrl: dormDash,
+      webUrl: "https://dormdash-5u6i.onrender.com/"
     },
     {
       title: "EasyNote",
