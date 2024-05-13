@@ -1,5 +1,6 @@
 import { Col } from "react-bootstrap";
 import { FaGithub } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
 export const ProjectCard = ({
   title,
@@ -23,6 +24,11 @@ export const ProjectCard = ({
           {githubUrl && (
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
               <FaGithub />
+            </a>
+          )} { "  "}
+           {webUrl && (
+            <a href={webUrl} target="_blank" rel="noopener noreferrer">
+              <CgWebsite />
             </a>
           )}
           <h5>{title}</h5>
