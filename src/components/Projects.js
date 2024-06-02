@@ -9,7 +9,6 @@ import projectr4 from "../assets/img/projectr4.png";
 import projectr5 from "../assets/img/projectr5.png";
 import dormDash from "../assets/img/DormDash.gif";
 import easyNote from "../assets/img/EasyNote.gif";
-import snake from "../assets/img/Snake.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import colorSharp from "../assets/img/color-sharp.png";
 import "animate.css";
