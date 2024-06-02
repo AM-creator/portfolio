@@ -30,18 +30,12 @@ export const Projects = () => {
 
       githubUrl: "https://github.com/AM-creator/DormDash.git",
       imgUrl: dormDash,
-      webUrl: "https://dormdash-5u6i.onrender.com/"
+      webUrl: "https://dormdash-5u6i.onrender.com/",
     },
     {
       title: "EasyNote",
       description: "A full-Stack note-taking web application.",
       imgUrl: easyNote,
-      githubUrl: "https://github.com/AM-creator/EasyNote.git",
-    },
-    {
-      title: "Snake",
-      description: "A web mini-game that imitates the classic Snake game.",
-      imgUrl: snake,
       githubUrl: "https://github.com/AM-creator/EasyNote.git",
     },
   ];
@@ -75,7 +69,7 @@ export const Projects = () => {
         "Comparative Study of MongoDB and Amazon DocumentDB in Write-Heavy Scenarios",
       imgUrl: projectr1,
       githubUrl:
-        "https://github.com/AM-creator/Comparative-Study-of-Self-hosted-MongoDB-and-AWS-DocumentDB.git",
+        "https://github.com/AM-creator/Comparative-Study-of-Self-hosted-MongoDB-on-EC2-and-AWS-DocumentDB.git",
     },
     {
       title: "AWS Lambda Transform-Load-Query Data Pipeline",
