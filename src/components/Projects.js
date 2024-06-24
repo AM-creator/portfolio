@@ -8,6 +8,8 @@ import projectr3 from "../assets/img/projectr3.png";
 import projectr4 from "../assets/img/projectr4.png";
 import projectr5 from "../assets/img/projectr5.png";
 import dormDash from "../assets/img/DormDash.gif";
+import portfolio from "../assets/img/portfolio.gif";
+import myRide from "../assets/img/myRide.jpg";
 import easyNote from "../assets/img/EasyNote.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import colorSharp from "../assets/img/color-sharp.png";
@@ -30,6 +32,24 @@ export const Projects = () => {
       githubUrl: "https://github.com/AM-creator/DormDash.git",
       imgUrl: dormDash,
       webUrl: "https://dormdash-5u6i.onrender.com/",
+    },
+
+    {
+      title: "Portfolio",
+      description: "A portfolio site built with React and Bootstrap.",
+
+      githubUrl: "https://github.com/AM-creator/portfolio.git",
+      imgUrl: portfolio,
+      webUrl: "https://am-creator.github.io/portfolio/",
+    },
+
+    {
+      title: "MyRide-Frontend (In Progress)",
+      description:
+        "Frontend development for MyRide, a ride-sharing application.",
+
+      githubUrl: "https://github.com/AM-creator/MyRide-Frontend.git",
+      imgUrl: myRide,
     },
     {
       title: "EasyNote",
@@ -63,7 +83,7 @@ export const Projects = () => {
   ];
   const researchProjects = [
     {
-      title: "MongDB on EC2 VS AWS DocumentDB (In Progress)",
+      title: "MongDB on EC2 VS AWS DocumentDB",
       description:
         "Comparative Study of MongoDB and Amazon DocumentDB in Write-Heavy Scenarios",
       imgUrl: projectr1,
