@@ -50,6 +50,7 @@ export const Projects = () => {
 
       githubUrl: "https://github.com/AM-creator/MyRide-Frontend.git",
       imgUrl: myRide,
+      webUrl: "https://am-creator.github.io/MyRide-Frontend",
     },
     {
       title: "EasyNote",
