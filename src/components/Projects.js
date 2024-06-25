@@ -9,7 +9,7 @@ import projectr4 from "../assets/img/projectr4.png";
 import projectr5 from "../assets/img/projectr5.png";
 import dormDash from "../assets/img/DormDash.gif";
 import portfolio from "../assets/img/portfolio.gif";
-import myRide from "../assets/img/myRide.jpg";
+import myRide from "../assets/img/myRide.gif";
 import easyNote from "../assets/img/EasyNote.gif";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import colorSharp from "../assets/img/color-sharp.png";
@@ -44,7 +44,7 @@ export const Projects = () => {
     },
 
     {
-      title: "MyRide-Frontend (In Progress)",
+      title: "MyRide-Frontend",
       description:
         "Frontend development for MyRide, a ride-sharing application.",
 
