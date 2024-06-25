@@ -117,7 +117,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 }
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbar .navbar-nav {
   opacity: 1;
 }
 

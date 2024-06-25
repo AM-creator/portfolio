@@ -3,7 +3,6 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,10 +17,6 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleLinkClick = (link) => {
-    setActiveLink(link);
-  };
-
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -31,35 +26,13 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link
-                href="#home"
-                className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => handleLinkClick("home")}
-              >
+              <Nav.Link href="#home" className={"navbar-link"}>
                 Home
               </Nav.Link>
-              <Nav.Link
-                href="#projects"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => handleLinkClick("projects")}
-              >
+              <Nav.Link href="#projects" className={"navbar-link"}>
                 Projects
               </Nav.Link>
-              <Nav.Link
-                href="#connect"
-                className={
-                  activeLink === "contact"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => handleLinkClick("contact")}
-              >
+              <Nav.Link href="#connect" className={"navbar-link"}>
                 Contact
               </Nav.Link>
             </Nav>
