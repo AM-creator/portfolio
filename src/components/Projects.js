@@ -18,7 +18,6 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
-  const [intervalId, setIntervalId] = useState(null);
   const [isRotating, setIsRotating] = useState(true);
   const projectsSectionRef = useRef(null);
   const tabs = ["first", "second", "third"];
@@ -28,26 +27,21 @@ export const Projects = () => {
       title: "DormDash",
       description:
         "A comprehensive real estate platform for university communities using MERN stack.",
-
       githubUrl: "https://github.com/AM-creator/DormDash.git",
       imgUrl: dormDash,
       webUrl: "https://dormdash-5u6i.onrender.com/",
     },
-
     {
       title: "Portfolio",
       description: "A portfolio site built with React and Bootstrap.",
-
       githubUrl: "https://github.com/AM-creator/portfolio.git",
       imgUrl: portfolio,
       webUrl: "https://am-creator.github.io/portfolio/",
     },
-
     {
       title: "MyRide-Frontend",
       description:
         "Frontend development for MyRide, a ride-sharing application.",
-
       githubUrl: "https://github.com/AM-creator/MyRide-Frontend.git",
       imgUrl: myRide,
       webUrl: "https://am-creator.github.io/MyRide-Frontend",
@@ -82,6 +76,7 @@ export const Projects = () => {
         "An Oculus VR mini-game in which the user is tasked with figuring out the order and amount of ingredients for the immortality Elixir.",
     },
   ];
+
   const researchProjects = [
     {
       title: "MongDB on EC2 VS AWS DocumentDB",
@@ -99,14 +94,12 @@ export const Projects = () => {
       githubUrl:
         "https://github.com/AM-creator/Case-Study-of-AWS-Data-Processing-Pipeline.git",
     },
-
     {
       title: "User Experience",
       description:
         "Mu, Y. (2022). Why and How Do Users Use Bullet Screen? A Qualitative Study Paper/Poster at AEJMC 2022, Detroit, MI.",
       imgUrl: projectr3,
     },
-
     {
       title: "Media Influence",
       description:
@@ -114,7 +107,7 @@ export const Projects = () => {
       imgUrl: projectr4,
     },
     {
-      title: "Audiance Research",
+      title: "Audience Research",
       description:
         "Mu, Y. (2020). Urban Audiences’ Consumption of Rural Self-Media in China. Paper/Poster at AEJMC 2020, San Francisco, CA.",
       imgUrl: projectr5,
@@ -133,13 +126,11 @@ export const Projects = () => {
 
       return () => clearInterval(newIntervalId);
     }
-  }, [isRotating, tabs]);
+  }, [isRotating]);
 
   const handleTabSelect = (eventKey) => {
     setActiveTab(eventKey);
     setIsRotating(false);
-    clearInterval(intervalId);
-    setIntervalId(null);
   };
 
   useEffect(() => {
@@ -147,26 +138,27 @@ export const Projects = () => {
 
     const handleInteraction = () => {
       setIsRotating(false);
-      clearInterval(intervalId);
-      setIntervalId(null);
     };
 
-    // Listen for various interaction events within project image boxes and videos
-    const projectImageBoxes = projectsSection.querySelectorAll(".proj-imgbx");
-    const projectVideos = projectsSection.querySelectorAll(".video");
+    const addInteractionListeners = () => {
+      const projectImageBoxes = projectsSection.querySelectorAll(".proj-imgbx");
+      const projectVideos = projectsSection.querySelectorAll(".video");
 
-    projectImageBoxes.forEach((box) => {
-      box.addEventListener("mouseenter", handleInteraction);
-      box.addEventListener("click", handleInteraction);
-    });
+      projectImageBoxes.forEach((box) => {
+        box.addEventListener("mouseenter", handleInteraction);
+        box.addEventListener("click", handleInteraction);
+      });
 
-    projectVideos.forEach((video) => {
-      video.addEventListener("mouseenter", handleInteraction);
-      video.addEventListener("click", handleInteraction);
-    });
+      projectVideos.forEach((video) => {
+        video.addEventListener("mouseenter", handleInteraction);
+        video.addEventListener("click", handleInteraction);
+      });
+    };
 
-    return () => {
-      // Clean up event listeners
+    const removeInteractionListeners = () => {
+      const projectImageBoxes = projectsSection.querySelectorAll(".proj-imgbx");
+      const projectVideos = projectsSection.querySelectorAll(".video");
+
       projectImageBoxes.forEach((box) => {
         box.removeEventListener("mouseenter", handleInteraction);
         box.removeEventListener("click", handleInteraction);
@@ -177,7 +169,10 @@ export const Projects = () => {
         video.removeEventListener("click", handleInteraction);
       });
     };
-  }, [intervalId]);
+
+    addInteractionListeners();
+    return () => removeInteractionListeners();
+  }, []);
 
   return (
     <section className="project" id="projects" ref={projectsSectionRef}>

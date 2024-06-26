@@ -367,7 +367,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .nav.nav-pills .nav-link.active::before {
-  width: 100% !important;
+  width: 100%;
 }
 
 .project .nav.nav-pills .nav-link.active {
@@ -381,6 +381,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .nav-link#projects-tabs-tab-third {
   border-radius: 0px 55px 55px 0px;
+}
+
+#pills-tab > div:nth-child(3) {
+  z-index: 999 !important;
 }
 
 .project .section-title {
