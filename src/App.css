@@ -255,7 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   margin-top: 50px;
-  color: #dfbedf;
+  color: #d4b8fa;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.8px;
@@ -283,15 +283,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   animation: updown 3s linear infinite;
 }
+
 @keyframes updown {
   0% {
-    transform: translateY(-20px);
+    transform: scale(1.1) scaleX(-1) translateY(-20px);
   }
   50% {
-    transform: translateY(20px);
+    transform: scale(1.1) scaleX(-1) translateY(20px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: scale(1.1) scaleX(-1) translateY(-20px);
   }
 }
 .txt-rotate > .wrap {
@@ -384,7 +385,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 #pills-tab > div:nth-child(3) {
-  z-index: 999 !important;
+  z-index: 999 !important ;
 }
 
 .project .section-title {
