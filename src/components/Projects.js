@@ -18,7 +18,6 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const [activeTab, setActiveTab] = useState("first");
-  const [isRotating, setIsRotating] = useState(true);
   const projectsSectionRef = useRef(null);
   const tabs = ["first", "second", "third"];
 
@@ -114,30 +113,15 @@ export const Projects = () => {
     },
   ];
 
-  useEffect(() => {
-    if (isRotating) {
-      const newIntervalId = setInterval(() => {
-        setActiveTab((prevTab) => {
-          const currentIndex = tabs.indexOf(prevTab);
-          const nextIndex = (currentIndex + 1) % tabs.length;
-          return tabs[nextIndex];
-        });
-      }, 5000);
-
-      return () => clearInterval(newIntervalId);
-    }
-  }, [isRotating]);
-
   const handleTabSelect = (eventKey) => {
     setActiveTab(eventKey);
-    setIsRotating(false);
   };
 
   useEffect(() => {
     const projectsSection = projectsSectionRef.current;
 
     const handleInteraction = () => {
-      setIsRotating(false);
+      setActiveTab((prevTab) => prevTab);
     };
 
     const addInteractionListeners = () => {

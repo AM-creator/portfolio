@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -55,46 +53,28 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
+            <div>
+              <span className="tagline">Welcome to my Portfolio</span>
+              <h1>
+                {`Hi, I'm Angela`}{" "}
                 <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
+                  className="txt-rotate"
+                  dataPeriod="1000"
+                  data-rotate='[ "Full-stack Developer", "VR Developer", "UX Researcher"]'
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  
-                  <h1>
-                    {`Hi, I'm Angela`}{" "}
-                 
-                    <div
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Full-stack Developer", "VR Developer", "UX Researcher"]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </div>
-                  </h1>
-                  <p>
-                    Crafing experiences with the interaction of technology and
-                    creativity
-                  </p>
+                  <span className="wrap">{text}</span>
                 </div>
-              )}
-            </TrackVisibility>
+              </h1>
+              <p>
+                Crafting experiences with the interaction of technology and
+                creativity
+              </p>
+            </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Image" />
-                </div>
-              )}
-            </TrackVisibility>
+            <div>
+              <img src={headerImg} alt="Header Image" />
+            </div>
           </Col>
         </Row>
       </Container>
