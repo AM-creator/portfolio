@@ -222,6 +222,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+@media (max-width: 767px) {
+  nav.navbar .navbar-toggler-icon {
+    transition: none;
+    top: 2px;
+  }
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
