@@ -225,7 +225,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 767px) {
   nav.navbar .navbar-toggler-icon {
     transition: none;
-    top: 3px;
+    top: 4px;
   }
 }
 
@@ -305,6 +305,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
   font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    text-align: center;
+  }
 }
 
 /************ Projects Css ************/
