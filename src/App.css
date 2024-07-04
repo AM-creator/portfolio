@@ -225,7 +225,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 767px) {
   nav.navbar .navbar-toggler-icon {
     transition: none;
-    top: 4px;
+    top: 3px;
   }
 }
 
