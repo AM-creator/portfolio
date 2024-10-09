@@ -96,19 +96,19 @@ export const Projects = () => {
     {
       title: "User Experience",
       description:
-        "Mu, Y. (2022). Why and How Do Users Use Bullet Screen? A Qualitative Study Paper/Poster at AEJMC 2022, Detroit, MI.",
+        "Mu, Y. (2022). Why and how do users use bullet screen? A qualitative study. Paper/Poster at AEJMC 2022, Detroit, MI.",
       imgUrl: projectr3,
     },
     {
       title: "Media Influence",
       description:
-        "Alpert, J., Chen, H., Chung, Y., & Mu, Y. (2021). A content analysis of e-cigarette posts using the Content Appealing to Youth (CAY) Index. Substance Use & Misuse. DOI: 10.1080/10826084.2021.1899233",
+        "Alpert, J., Chen, H., Chung, Y., & Mu, Y. (2021). Vaping and Instagram: A content analysis of e-cigarette posts using the Content Appealing to Youth (CAY) Index. Substance Use & Misuse. DOI: 10.1080/10826084.2021.1899233",
       imgUrl: projectr4,
     },
     {
       title: "Audience Research",
       description:
-        "Mu, Y. (2020). Urban Audiences’ Consumption of Rural Self-Media in China. Paper/Poster at AEJMC 2020, San Francisco, CA.",
+        "Mu, Y. (2020). Lure of the rural: Urban audiences' consumption of rural self-media in China. Paper/Poster at AEJMC 2020, San Francisco, CA.",
       imgUrl: projectr5,
     },
   ];
